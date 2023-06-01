@@ -1,42 +1,50 @@
 # Project Pythia
 
-Scientists working in a multitude of disciplines rely heavily on
-computing technologies for their research. Numerical simulations
-run on supercomputers are used in the study of climate, weather,
-atmospheric chemistry, wildfires, space weather, and more. Similarly,
-a tremendous volume of digital data produced by numerical simulations,
-or observations made with instruments, are analyzed with the help
-of powerful computers and software. Thus, today’s scientists require
-not only expertise in their scientific discipline, but also require
-high-level technical skills to effectively analyze, manipulate, and
-make sense of potentially vast volumes of data. Computing environments
-change rapidly, and two technologies that have emerged and are being
-adopted by scientific communities relatively recently are Cloud
-Computing platforms and a software ecosystem of scientific tools
-built around the open source programming language called Python.
-Project Pythia will provide a public, web-accessible training
-resource that will help educate current, and aspiring, earth
-scientists to more effectively use both the Scientific Python
-Ecosystem and Cloud Computing to make sense of huge volumes of
-numerical scientific data.
+:::{banner}
+:color: rgba(26, 100, 143, 0.85)
+:image: _static/images/backgrounds/pexels-jeff-stapleton-5792818.jpg
+:caption: Photo by Jeff Stapleton from Pexels
+:class: dark-banner
+:::
+
+<span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
+
+<a href="https://projectpythia.org/pythia-cookoff-2023/README.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
+        Project Pythia is hosting a Cookbook Cook-Off June 20-23, 2023.<br>
+        Learn more here.
+</a>
+
+[Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
+and is an educational resource for the entire geoscience community.
+Together these initiatives are helping geoscientists make sense of huge volumes of
+numerical scientific data using tools that facilitate open, reproducible science,
+and building an inclusive [community of practice](https://en.wikipedia.org/wiki/Community_of_practice)
+around these goals.
+
+Project Pythia is a home for Python-centered learning resources that are _open-source_,
+_community-owned_, _geoscience-focused_, and _high-quality_.
 
 <span class="d-flex justify-content-center py-4">
-    <a href="/about.html" role="button" class="btn btn-light btn-lg">
-        Read more about Project Pythia
+    <a href="about.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        About <img src="./_static/images/logos/pythia_logo-blue-rtext.svg" alt="Project Pythia" height="35px" style="margin-left: 0.5rem;">
+    </a>
+    <div class="horizontalgap" style="width:70px"></div>
+    <a href="https://pangeo.io/about" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        About <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/small_e_logo_cropped.png" alt="Pangeo logo" height="35px" style="margin-left: 0.5rem;">
+        <img src="https://raw.githubusercontent.com/pangeo-data/pangeo/master/docs/_static/pangeo_simple_logo.svg" alt="Pangeo" height="22px">
     </a>
 </span>
 
+
 ## Start Learning
 
-Project Pythia has two main resources for you to use to start learning how to use Python
-and the technology in the Python ecosystem for the geosciences: the
-[Pythia Foundations Book](#the-foundations-book) and the
-[Pythia Resource Gallery](#the-resource-gallery).
+Project Pythia has several resources for you to use to start learning how to use Python
+and the technology in the Python ecosystem for the geosciences.
 
 ### The Foundations Book
 
 The [Pythia Foundations Book](https://foundations.projectpythia.org) is a
-[Jupyter Book](https://jupyterbook.org/) that we are currently developing to
+[Jupyter Book](https://jupyterbook.org/) developed by the Pythia community to
 act as a **comprehensive set of tutorials** covering the **foundational skills**
 everyone needs to get started with **computing in the open-source Python ecosystem**.
 These foundational tutorials will serve as common references for more advanced and
@@ -44,21 +52,60 @@ domain-specific content to be housed here in the Pythia Portal.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
     <a href="https://foundations.projectpythia.org" role="button" class="btn btn-primary btn-lg">
-        Read the Project Pythia Foundations Book
+        Read the Pythia Foundations Book
+    </a>
+</span>
+
+### Pythia Cookbooks
+
+Pythia Cookbooks are collections of more advanced and domain-specific example workflows building on top of Pythia Foundations.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://cookbooks.projectpythia.org" role="button" class="btn btn-primary btn-lg">
+        Visit Pythia Cookbooks
     </a>
 </span>
 
 ### The Resource Gallery
 
 There is a wealth of educational resources out there on the internet for learning
-Python and how to use it in the geosciences! We have attempted to gather together as
-many of these resources as possible into our [Pythia Resource Gallery](/gallery).
+Python and how to use it in the geosciences! We have attempted to gather together
+a curated and filterable list of these resources (including Pythia's own content)
+into our [Pythia Resource Gallery](/resource-gallery).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 
 <span class="d-flex justify-content-center pt-1 pb-3">
-    <a href="/gallery.html" role="button" class="btn btn-primary btn-lg">
+    <a href="/resource-gallery.html" role="button" class="btn btn-primary btn-lg">
         Visit the Pythia Resource Gallery
+    </a>
+</span>
+
+### Webinar Tutorial Series
+
+The [Pythia Webinar Tutorial Series](https://ncar-xdev.github.io/status/tutorials.html) is hosted regularly by the Project Pythia team. Anyone can join
+these hour-long, instructor-led interactive tutorials. Participants can
+sit back and learn, or download a Jupyter Notebook and work along with
+the instructor. Each seminar is recorded for later viewing on the
+[Project Pythia YouTube channel](https://www.youtube.com/channel/UCoZPBqJal5uKpO8ZiwzavCw).
+Click the link below to view past and upcoming seminars, covering a range of
+topics from beginning to advanced.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://ncar-xdev.github.io/status/tutorials.html" role="button" class="btn btn-primary btn-lg">
+        Visit the Pythia Webinar Tutorial Series
+    </a>
+</span>
+
+### Pythia Data Collection
+
+Looking for a free, public domain geoscience data set that you can use to
+sharpen your skills while learning the Scientific Python Ecosystem? All of
+the example data used by the [Pythia Foundations Book](https://foundations.projectpythia.org) are freely accessible.
+
+<span class="d-flex justify-content-center pt-1 pb-3">
+    <a href="https://github.com/ProjectPythia/pythia-datasets" role="button" class="btn btn-primary btn-lg">
+        Visit the Pythia Data Repository
     </a>
 </span>
 
@@ -108,13 +155,13 @@ your own pace.
 ## Join us!
 
 If you have questions or want to share anything with the
-[Project Pythia Team](#the-project-pythia-team), please reach out to us on our
-[GitHub Discussions page](https://github.com/ProjectPythia/projectpythia.github.io/discussions)
+[Project Pythia Team](#the-project-pythia-team), please reach out to us through the
+[Project Pythia category on the Pangeo Discourse forum](https://discourse.pangeo.io/c/education/project-pythia/)
 or join us at our Weekly Working Group Meetings.
 
 <span class="d-flex justify-content-center pt-1 pb-4">
-    <a href="https://github.com/ProjectPythia/projectpythia.github.io/discussions" role="button" class="btn btn-primary btn-lg">
-        Go to GitHub Discussions
+    <a href="https://discourse.pangeo.io/c/education/project-pythia/" role="button" class="btn btn-primary btn-lg">
+        Go to Pangeo Discourse
     </a>
 </span>
 
@@ -143,7 +190,7 @@ for details on how you can get involved, and come see our work in the
 
 ### Weekly Working Group Meetings
 
-Project Pythia holds weekly public meetings every Thursday at 11:00AM Mountain (1:00PM Eastern)
+Project Pythia holds weekly public meetings every Monday at 1:00PM Mountain (3:00PM Eastern)
 on Zoom. Our meetings alternate focus between _Infrastructure_ and _Education_ content.
 Please find links and information about how to join in the calendar below. These meetings
 are open to anyone who wishes to participate. We publish
@@ -163,8 +210,8 @@ are open to anyone who wishes to participate. We publish
 :column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
 :body: text-center
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
+:img-top: https://avatars.githubusercontent.com/clyne
+
 **John Clyne**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -172,9 +219,8 @@ are open to anyone who wishes to participate. We publish
 [@clyne](https://github.com/clyne)
 
 ---
+:img-top: https://avatars.githubusercontent.com/matt-long
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Matthew C. Long**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -182,9 +228,8 @@ are open to anyone who wishes to participate. We publish
 [@matt-long](https://github.com/matt-long)
 
 ---
+:img-top: https://avatars.githubusercontent.com/dopplershift
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Ryan May**
 <br/>
 [**Unidata**](https://unidata.ucar.edu)
@@ -192,19 +237,17 @@ are open to anyone who wishes to participate. We publish
 [@dopplershift](https://github.com/dopplershift)
 
 ---
+:img-top: https://avatars.githubusercontent.com/kmpaul
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Kevin Paul**
 <br/>
-[**NCAR**](https://ncar.ucar.edu)
+[**NVIDIA**](https://www.nvidia.com/en-us/)
 <br/>
 [@kmpaul](https://github.com/kmpaul)
 
 ---
+:img-top: https://avatars.githubusercontent.com/brian-rose
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Brian E. J. Rose**
 <br/>
 [**University at Albany**](https://www.albany.edu/)
@@ -212,9 +255,8 @@ are open to anyone who wishes to participate. We publish
 [@brian-rose](https://github.com/brian-rose)
 
 ---
+:img-top: https://avatars.githubusercontent.com/ktyle
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Kevin Tyle**
 <br/>
 [**University at Albany**](https://www.albany.edu/)
@@ -229,18 +271,17 @@ are open to anyone who wishes to participate. We publish
 :column: col-lg-4 col-md-4 col-sm-6 p-3 mx-auto
 :body: text-center
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
+:img-top: https://avatars.githubusercontent.com/andersy005
+
 **Anderson Banihirwe**
 <br/>
-[**NCAR**](https://ncar.ucar.edu)
+[**CarbonPlan**](https://carbonplan.org/)
 <br/>
 [@andersy005](https://github.com/andersy005)
 
 ---
+:img-top: https://avatars.githubusercontent.com/dcamron
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
 **Drew Camron**
 <br/>
 [**Unidata**](https://unidata.ucar.edu)
@@ -248,9 +289,26 @@ are open to anyone who wishes to participate. We publish
 [@dcamron](https://github.com/dcamron)
 
 ---
+:img-top: https://avatars.githubusercontent.com/cjcardinale
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+**Chris Cardinale**
 <br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@cjcardinale](https://github.com/cjcardinale)
+
+---
+:img-top: https://avatars.githubusercontent.com/ncorbin-id
+
+**Nicole Corbin**
+<br/>
+[**Unidata**](https://unidata.ucar.edu)
+<br/>
+[@ncorbin-id](https://github.com/ncorbin-id)
+
+---
+:img-top: https://avatars.githubusercontent.com/erogluorhan
+
 **Orhan Eroglu**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -258,9 +316,26 @@ are open to anyone who wishes to participate. We publish
 [@erogluorhan](https://github.com/erogluorhan)
 
 ---
+:img-top: https://avatars.githubusercontent.com/r-ford
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
+**Robert Ford**
 <br/>
+[**University at Albany**](https://www.albany.edu/)
+<br/>
+[@r-ford](https://github.com/r-ford)
+
+---
+:img-top: https://avatars.githubusercontent.com/mgrover1
+
+**Max Grover**
+<br/>
+[**Argonne National Laboratory**](https://www.anl.gov/)
+<br/>
+[@mgrover1](https://github.com/mgrover1)
+
+---
+:img-top: https://avatars.githubusercontent.com/jukent
+
 **Julia Kent**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
@@ -268,14 +343,40 @@ are open to anyone who wishes to participate. We publish
 [@jukent](https://github.com/jukent)
 
 ---
+:img-top: https://avatars.githubusercontent.com/pilotchute
 
-<i class="bi bi-person-circle" style="font-size: 8rem;"></i>
-<br/>
-**Max Grover**
+**Alea Kootz**
 <br/>
 [**NCAR**](https://ncar.ucar.edu)
 <br/>
-[@mgrover1](https://github.com/mgrover1)
+[@pilotchute](https://github.com/pilotchute)
+
+---
+:img-top: https://avatars.githubusercontent.com/michaelavs
+
+**Michaela Sizemore**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@michaelavs](https://github.com/michaelavs)
+
+---
+:img-top: https://avatars.githubusercontent.com/anissa111
+
+**Anissa Zacharias**
+<br/>
+[**NCAR**](https://ncar.ucar.edu)
+<br/>
+[@anissa111](https://github.com/anissa111)
+
+---
+:img-top: https://avatars.githubusercontent.com/jnmorley
+
+**James Morley**
+<br/>
+[**Utah Valley University**](https://ncar.ucar.edu)
+<br/>
+[@jnmorley](https://github.com/jnmorley)
 ```
 
 ```{toctree}
@@ -286,4 +387,6 @@ maxdepth: 1
 about.md
 contributing.md
 code_of_conduct.md
+cookbook-gallery.md
+resource-gallery.md
 ```

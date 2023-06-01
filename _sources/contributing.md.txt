@@ -5,7 +5,7 @@
 Welcome! This is the main contributors guide for Project Pythia.
 Project Pythia is an open community, and all contributions are
 welcome following our [Code of
-Conduct](https://projectpythia.org/pages/code_of_conduct.html). All
+Conduct](https://projectpythia.org/code_of_conduct.html). All
 of the content for Project Pythia is hosted on GitHub in a number
 of different public repositories. From this document you can learn
 about the many ways that you can contribute to this community
@@ -25,19 +25,19 @@ to another community member’s question. There are a number of ways
 to have a dialogue with the Pythia community, such as by opening a
 GitHub issue, but the easiest method is to simply create (or respond
 to) a post on our [discussion
-forum](https://github.com/ProjectPythia/projectpythia.github.io/discussions).
+forum](https://discourse.pangeo.io/c/education/project-pythia/).
 
-### Add content to the External Links Gallery
+### Add content to the Resource Gallery
 
-The Project [Pythia External Links
-Gallery](https://projectpythia.org/pages/links.html) contains a
+The Project [Pythia Resource
+Gallery](https://projectpythia.org/resource-gallery.html) contains a
 collection of links to useful resources that were created and are
 hosted outside of Project Pythia. Some examples include: documentation
 and tutorials for iconic packages such as Matplotlib, Cartopy, and
 Xarray; on-line courses from universities and other educational
 institutions; and Jupyter Notebook galleries assembled and maintained
 by a variety of other sites. Project Pythia makes it possible to
-filter and search the External Links Gallery in a number of ways
+filter and search the Resource Gallery in a number of ways
 to ease finding relevant content. We encourage the community to
 consider submitting your own geoscience education material links
 to Project Pythia.
@@ -46,12 +46,12 @@ Contributing a new link is easy with these three simple steps:
 
 1. Navigate your web browser to the main Project Pythia repo's “issue” page [here](https://github.com/ProjectPythia/projectpythia.github.io/issues).
 1. Click on the button that says “New issue”.
-1. Click on the “Get started” button in the row labeled “Update external links gallery ”, and follow the instructions presented.
+1. Click on the “Get started” button in the row labeled “Update resource gallery ”, and follow the instructions presented.
 
 Alternatively, you can simply do:
 
-1. Navigate to the External Links Gallery.
-1. Click the `Submit a Link` button, which will redirect you to a new PR template as described in step (3) above.
+1. Navigate to the Resource Gallery.
+1. Click the `Submit a new resource` button, which will redirect you to a new PR template as described in step (3) above.
 
 That’s all you need to do. Your request will be reviewed, and you
 will be notified once your content has been accepted or if changes
@@ -59,7 +59,7 @@ are requested.
 
 ### Add a new Jupyter Notebook to Pythia Foundations
 
-[Project Pythia Foundations](https://foundations.projectpythia.org)
+[Pythia Foundations](https://foundations.projectpythia.org)
 is a collection of material that the Pythia team believes is essential
 knowledge for geoscientists to effectively use the Scientific Python
 Ecosystem. The Pythia Foundations content is hosted on a separate
@@ -69,6 +69,18 @@ information specific to Foundations. However, adding new, or changing
 existing Foundations content requires contributors to be familiar
 with a few technologies and workflows, described in Advanced
 Contributions below.
+
+### Add a new Cookbook to Cookbooks Gallery
+
+
+The Pythia [Cookbook
+Gallery](https://cookbooks.projectpythia.org/) is a
+collection of "cookbooks" that describe workflows that solve a
+specific problem. Typically, a cookbook references material presented
+elsewhere in Project Pythia, such as  [Pythia Foundations](https://foundations.projectpythia.org).
+Each Cookbook is hosted in a separate GitHub repo under the umbrella [Project Pythia
+organization](https://github.com/ProjectPythia).
+Contributors should consult the [Cookbook-specific Contributor's guide](https://github.com/ProjectPythia/.github/blob/main/.github/CONTRIBUTING.md).
 
 ### Pythia Portal
 
@@ -165,7 +177,7 @@ Don’t type the \$. This simply indicates the command line prompt.
 This is a complicated process and there are two authentication
 protocols supported: HTTP or SSH. Either will work fine, but we
 find HTTP to be the easiest to set up. Both processes are described
-in detail on the GitHub site [here](https://docs.github.com/en/github/getting-started-with-github/set-up-git#next-steps-authenticating-with-github-from-git).
+in detail on the GitHub site [here](https://docs.github.com/en/get-started/quickstart/set-up-git#authenticating-with-github-from-git).
 
 For further reading see the [GitHub Getting Started
 Guide](https://docs.github.com/en/github/getting-started-with-github).
