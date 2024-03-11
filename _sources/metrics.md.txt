@@ -1,9 +1,9 @@
-# User Metrics
+# Metrics
 
 Total Users:
 
-Portal: {{ user_metrics['portal'] }}
+Portal: 0
 
-Foundations: {{ user_metrics['foundations'] }}
+Foundations: 0
 
-Cookbooks: {{ user_metrics['cookbooks'] }}
+Cookbooks: 0
