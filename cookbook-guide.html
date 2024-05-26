@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Code of Conduct</title>
+    <title>Cookbook Contributor’s Guide</title>
   
   
   
@@ -57,13 +57,13 @@
                 gtag('js', new Date());
                 gtag('config', 'G-T9KGMX7VHZ');
             </script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'code_of_conduct';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'cookbook-guide';</script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Resource Gallery" href="resource-gallery.html" />
-    <link rel="prev" title="Cookbook Contributor’s Guide" href="cookbook-guide.html" />
+    <link rel="next" title="Code of Conduct" href="code_of_conduct.html" />
+    <link rel="prev" title="Project Pythia Contributor’s Guide" href="contributing.html" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -355,8 +355,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="about.html">About Project Pythia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="contributing.html">Project Pythia Contributor’s Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cookbook-guide.html">Cookbook Contributor’s Guide</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Code of Conduct</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Cookbook Contributor’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code_of_conduct.html">Code of Conduct</a></li>
 <li class="toctree-l1"><a class="reference internal" href="resource-gallery.html">Resource Gallery</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metrics.html">Metrics</a></li>
 </ul>
@@ -388,62 +388,115 @@
 <div id="searchbox"></div>
                   <article class="bd-article">
                     
-<section id="code-of-conduct">
-<h1>Code of Conduct<a class="headerlink" href="#code-of-conduct" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
-<section id="our-pledge">
-<h2>Our Pledge<a class="headerlink" href="#our-pledge" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>We, as contributors, creators, stewards, and maintainers (participants), of Project Pythia pledge to make participation in our software, system or hardware project and community a safe, productive, welcoming and inclusive experience for everyone. All participants are required to abide by this Code of Conduct. This includes respectful treatment of everyone regardless of age, body size, disability, ethnicity, gender identity or expression, level of experience, nationality, political affiliation, veteran status, pregnancy, genetic information, physical appearance, race, religion, or sexual orientation, as well as any other characteristic protected under applicable US federal or state law.</p>
+<section id="cookbook-contributor-s-guide">
+<h1>Cookbook Contributor’s Guide<a class="headerlink" href="#cookbook-contributor-s-guide" title="Link to this heading"><i class="fas fa-link"></i></a></h1>
+<p>Project Pythia Cookbooks are collections of more advanced and domain-specific example
+workflows building on top of <a class="reference external" href="https://foundations.projectpythia.org/landing-page.html">Pythia Foundations</a>.
+They are <a class="reference external" href="https://en.wikipedia.org/wiki/Earth_science">geoscience</a>-focused
+and should direct the reader towards the Foundations material for any required
+background knowledge.</p>
+<p>The following is a step-by-step guide to getting your cookbook idea
+hosted on the <a class="reference external" href="https://cookbooks.projectpythia.org">Project Pythia Cookbooks Gallery</a>.</p>
+<p>Before you begin, ask yourself if the content you are developing for a cookbook would be better suited as an addition to an existing cookbook. The best place to discuss cookbook ideas is the <a class="reference external" href="https://discourse.pangeo.io/c/education/project-pythia/60">Project Pythia category of the Pangeo Discourse</a>.</p>
+<section id="data-access">
+<h2>Data access<a class="headerlink" href="#data-access" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>Before developing your cookbook, you should consider how it will access the data you plan to use. In loose order of preference, we recommend the following:</p>
+<ol class="arabic simple">
+<li><p>Rely on data that is already freely available and accessible with tools in the ecosystem. Point to Foundations or other cookbooks for tool how-to guides if needed. Examples include the <a class="reference external" href="https://projectpythia.org/cmip6-cookbook/">CMIP6 Cookbook</a> and the <a class="reference external" href="https://projectpythia.org/cesm-lens-aws-cookbook/">CESM LENS on AWS Cookbook</a></p></li>
+<li><p>Focus on representative subsets of data that can be packaged alongside the cookbook in-repo. An example is the <a class="reference external" href="https://projectpythia.org/landsat-ml-cookbook/README.html">Landsat ML Cookbook</a></p></li>
+<li><p>Wait for the Pythia team to explore cloud storage support via NSF JetStream or adjacent efforts</p></li>
+<li><p>Provide the tools and/or clear documentation for accessing the data that you have stored somewhere else</p></li>
+</ol>
 </section>
-<section id="our-standards">
-<h2>Our Standards<a class="headerlink" href="#our-standards" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>Examples of behaviors that contribute to a positive environment include:</p>
+<section id="use-the-template">
+<h2>Use the template<a class="headerlink" href="#use-the-template" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<ol class="arabic simple">
+<li><p>If you don’t already have a GitHub account, create one by following the <a class="reference external" href="https://foundations.projectpythia.org/foundations/getting-started-github.html">Getting Started with GitHub guide</a></p></li>
+<li><p>On https://github.com/ProjectPythia/cookbook-template, click “Use this template→Create a new repository”</p></li>
+<li><p>Give your repository a descriptive name followed by <code class="docutils literal notranslate"><span class="pre">-cookbook</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">hydrology-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">hpc-cookbook</span></code>, <code class="docutils literal notranslate"><span class="pre">cesm-cookbook</span></code>) and a description</p></li>
+<li><p>Choose “Include all branches” and create the repository. Your browser will be directed to the newly created repository under your GitHub account</p></li>
+<li><p>Under Settings→Pages, ensure that GitHub Pages is enabled. If it is not, change the Branch from “None” to “gh-pages/(root)” and click “Save”</p></li>
+<li><p>Under Settings→Actions→General, allow Github Actions to <strong>push</strong> to the repository <a class="reference internal" href="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png"><img alt="Screenshot 2023-01-13 at 3 12 47 PM" src="https://user-images.githubusercontent.com/26660300/212428991-cd0ae2f0-73ca-40d8-b983-f122359463aa.png" style="width: 901px;" /></a></p></li>
+</ol>
+<p>Your cookbook is now ready to have content added. In the rest of this guide, we will mostly assume that you are familiar with git/GitHub. If not, we recommend reading through our <a class="reference external" href="https://foundations.projectpythia.org/foundations/getting-started-github.html">GitHub tutorials in Foundations</a>.</p>
+</section>
+<section id="update-repository-specific-text">
+<h2>Update repository-specific text<a class="headerlink" href="#update-repository-specific-text" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
 <ul class="simple">
-<li><p>All participants are treated with respect and consideration, valuing a diversity of views and opinions</p></li>
-<li><p>Be considerate, respectful, and collaborative</p></li>
-<li><p>Communicate openly with respect for others, critiquing ideas rather than individuals and gracefully accepting criticism</p></li>
-<li><p>Acknowledging the contributions of others</p></li>
-<li><p>Avoid personal attacks directed toward other participants</p></li>
-<li><p>Be mindful of your surroundings and of your fellow participants</p></li>
-<li><p>Alert project administrators if you notice a dangerous situation or someone in distress</p></li>
-<li><p>Respect the rules and policies of the project and venue</p></li>
+<li><p>Automatically adjust link paths that need to be changed from the <code class="docutils literal notranslate"><span class="pre">cookbook-template</span></code> to your new cookbook by manually trigger the action “trigger-replace-links” GitHub action. Do this by navigating to “Actions” -&gt; “trigger-replace-links” -&gt; “Run workflow”.</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code>. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and are used for filtering.</p>
+<ul>
+<li><p>title</p></li>
+<li><p>thumbnail (not logo). You may simply replace the default <code class="docutils literal notranslate"><span class="pre">thumbnail.png</span></code> with your own image</p></li>
+<li><p>tags</p></li>
 </ul>
-<p>Examples of unacceptable behavior include, but are not limited to:</p>
+</li>
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file Change the following fields. These will show up on your <a class="reference external" href="https://cookbooks.projectpythia.org/">card in the gallery</a> and on your Zenodo citation.</p>
+<ul>
+<li><p>title</p></li>
+<li><p>authors</p></li>
+<li><p>authors’ ORCID IDs and affiliation websites (optional)</p></li>
+<li><p>description/abstract</p></li>
+<li><p>Cookbook contributor name</p></li>
+</ul>
+</li>
+<li><p>Edit the <code class="docutils literal notranslate"><span class="pre">notebooks/how-to-cite.md</span></code> file with your Cookbook title in the line, “The material in <This Cookbook> is licensed …”</p></li>
+</ul>
+</section>
+<section id="set-up-the-environment">
+<h2>Set up the environment<a class="headerlink" href="#set-up-the-environment" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html">Clone the repository</a> in your local workspace</p></li>
+<li><p>Within <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>, change <code class="docutils literal notranslate"><span class="pre">name</span></code> from <code class="docutils literal notranslate"><span class="pre">cookbook-dev</span></code> to <code class="docutils literal notranslate"><span class="pre">&lt;your-cookbook-name&gt;-dev</span></code> (e.g. <code class="docutils literal notranslate"><span class="pre">cesm-cookbook-dev</span></code>) and add all required libraries and other dependencies under <code class="docutils literal notranslate"><span class="pre">dependencies:</span></code>. Commit the changes</p></li>
+<li><p>Create the Conda environment with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">environment.yml</span></code>. If it crashes, try running <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--set</span> <span class="pre">channel_priority</span> <span class="pre">strict</span></code></p></li>
+<li><p>Activate your environment with <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">&lt;env-name&gt;</span></code></p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">.github/workflows/nightly-build.yaml</span></code>, <code class="docutils literal notranslate"><span class="pre">.github/workflows/publish-book.yaml</span></code>, and <code class="docutils literal notranslate"><span class="pre">.github/workflows/trigger-book-build.yaml</span></code>, change the <code class="docutils literal notranslate"><span class="pre">environment_name</span></code> to the name of your environment (ex. <code class="docutils literal notranslate"><span class="pre">cesm-cookbook-dev</span></code>)</p></li>
+<li><p>If when building your Cookbook in GitHub actions, you get the error, “Exemption Occured: jupyter_client.kernelspec.NoSuchKernel: No such kernel named <environment name>”, that means there is an error in your <code class="docutils literal notranslate"><span class="pre">kernelspec</span></code> metadata. You can fix this in the command line by entering in the command line <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">nbconvert</span> <span class="pre">--to</span> <span class="pre">notebook</span> <span class="pre">--inplace</span> <span class="pre">--Exporter.preprocessors='[&quot;nbconvert.preprocessors.ClearMetadataPreprocessor&quot;,</span> <span class="pre">&quot;nbconvert.preprocessors.ClearOutputPreprocessor&quot;]'</span> <span class="pre">notebooks/*.ipynb</span></code></p></li>
+</ol>
+</section>
+<section id="develop-your-cookbook">
+<h2>Develop your cookbook<a class="headerlink" href="#develop-your-cookbook" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<p>To add content, you should edit (and duplicate as necessary) the notebook template <code class="docutils literal notranslate"><span class="pre">notebooks/notebook-template.ipynb</span></code>. You can add folders to organize notebooks into sections if applicable.
+Once you have a set of notebooks that you are ready to share, there are various edits that need to be made so that your cookbook is functional and polished. Here is a checklist to go through before moving on to the next step:</p>
 <ul class="simple">
-<li><p>Harassment, intimidation, or discrimination in any form</p></li>
-<li><p>Physical, verbal, or written abuse by anyone to anyone, including repeated use of pronouns other than those requested</p></li>
-<li><p>Unwelcome sexual attention or advances</p></li>
-<li><p>Personal attacks directed at other guests, members, participants, etc.</p></li>
-<li><p>Publishing others’ private information, such as a physical or electronic address, without explicit permission</p></li>
-<li><p>Alarming, intimidating, threatening, or hostile comments or conduct</p></li>
-<li><p>Inappropriate use of nudity and/or sexual images</p></li>
-<li><p>Threatening or stalking anyone, including a participant</p></li>
-<li><p>Other conduct which could reasonably be considered inappropriate in a professional setting</p></li>
+<li><p>Add the notebooks to <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> (the table of contents). See <a class="reference external" href="https://github.com/ProjectPythia/radar-cookbook/blob/main/_toc.yml"><code class="docutils literal notranslate"><span class="pre">radar-cookbook/_toc.yml</span></code></a> for syntax</p></li>
+<li><p>Edit <code class="docutils literal notranslate"><span class="pre">README.md</span></code> as described in that file. This is the homepage of your cookbook, so it should be descriptive</p></li>
+<li><p>If your cookbook requires more computing resources than available through GitHub Actions, change <code class="docutils literal notranslate"><span class="pre">execute_notebooks</span></code> from <code class="docutils literal notranslate"><span class="pre">cache</span></code> to <code class="docutils literal notranslate"><span class="pre">binder</span></code> in <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> to run your cookbook on the Pythia Binder</p></li>
+<li><p>Clear all notebook outputs, since the Pythia infrastructure will execute the notebooks</p></li>
+<li><p>Ensure that your cookbook successfully builds and shows the executed code</p></li>
 </ul>
 </section>
-<section id="scope-of-this-code">
-<h2>Scope of this Code<a class="headerlink" href="#scope-of-this-code" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>This Code of Conduct applies to all spaces managed by the Project whether they be physical, online or face-to-face. This includes project code, code repository, associated web pages, documentation, mailing lists, project websites and wiki pages, issue tracker, meetings, telecons, events, project social media accounts, and any other forums created by the project team which the community uses for communication. In addition, violations of this Code of Conduct outside these spaces may affect a person’s ability to participate within them. Representation of a project may be further defined and clarified by project maintainers.</p>
+<section id="transfer-cookbook-to-the-projectpythia-organization">
+<h2>Transfer cookbook to the <a class="reference external" href="https://github.com/ProjectPythia">ProjectPythia</a> organization<a class="headerlink" href="#transfer-cookbook-to-the-projectpythia-organization" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://discourse.pangeo.io/c/education/project-pythia/60">Contact Project Pythia via the Pangeo Discourse</a> (or otherwise) to let us know about your cookbook</p></li>
+<li><p>Someone from the Pythia team will add you as a member of the ProjectPythia organization</p></li>
+<li><p>Once you have accepted the invitation, navigate to the settings of your cookbook repository, scroll down to the Danger Zone, and click “Transfer”</p></li>
+<li><p>Select or type “ProjectPythia”, confirm, and transfer</p></li>
+<li><p>Replace the <code class="docutils literal notranslate"><span class="pre">repository_url</span></code> in the <code class="docutils literal notranslate"><span class="pre">sphinx/config/html_theme_options</span></code> of the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file to point to your cookbook’s new GitHub repository within the <a class="reference external" href="https://github.com/ProjectPythia">ProjectPythia</a> organization</p></li>
+</ol>
+<p>You will automatically retain write access to your cookbook, but if you would like to add outside collaborators to the repository, contact a member of the Pythia team to be given the Admin role on your cookbook repository.</p>
+<p>You can open issues, PRs, and continue making edits as necessary.</p>
 </section>
-<section id="community-responsibilities">
-<h2>Community Responsibilities<a class="headerlink" href="#community-responsibilities" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>Everyone in the community is empowered to respond to people who are showing unacceptable behavior. They can talk to them privately or publicly. Anyone requested to stop unacceptable behavior is expected to comply immediately. If the behavior continues concerns may be brought to the project administrators or to any other party listed in the Reporting section below.</p>
+<section id="make-a-zenodo-release-of-your-cookbook">
+<h2>Make a Zenodo release of your Cookbook<a class="headerlink" href="#make-a-zenodo-release-of-your-cookbook" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<ol class="arabic simple">
+<li><p>On Zenodo toggle on your repository by going to GitHub and then finding your repository. Let a Project Pythia teammember know if you cannot do this.</p></li>
+<li><p>On GitHub make a new release! This is on the right nav side of the page from your code-view in the repository. Again ask for help if needed. Note Zenodo badge links will fail until you have made a release.</p></li>
+</ol>
 </section>
-<section id="project-administrator-responsibilities">
-<h2>Project Administrator Responsibilities<a class="headerlink" href="#project-administrator-responsibilities" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>Project administrators are responsible for clarifying the standards of acceptable behavior and are encouraged to model appropriate behavior and provide support when people in the community point out inappropriate behavior. Project administrator(s) are normally the ones that would be tasked to carry out the actions in the Consequences section below.</p>
-</section>
-<section id="reporting">
-<h2>Reporting<a class="headerlink" href="#reporting" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>Instances of unacceptable behavior can be brought to the attention of the project administrator(s) who may take any action as outlined in the Consequences section below.</p>
-</section>
-<section id="consequences">
-<h2>Consequences<a class="headerlink" href="#consequences" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>Upon receipt of a complaint, the project administrator(s) may take any action deemed necessary and appropriate under the circumstances. Such action can include things such as: removing, editing, or rejecting comments, commits, code, wiki edits, email, issues, and other contributions that are not
-aligned to this Code of Conduct, or banning temporarily or permanently any contributor for other behaviors that are deemed inappropriate, threatening, offensive, or harmful. Project administrators also have the right to report violations to UCAR HR and/or UCAR’s Office of Diversity, Equity and Inclusion (ODEI), as well as a participant’s home institution and/or law enforcement. In the event an incident is reported to UCAR, UCAR will follow its Harassment Reporting and Complaint Procedure.</p>
-</section>
-<section id="attribution">
-<h2>Attribution<a class="headerlink" href="#attribution" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
-<p>This Code of Conduct was originally adapted from the Contributor Covenant, version 1.4. We then aligned it with the UCAR Participant Code of Conduct, which also borrows from the American Geophysical Union (AGU) Code of Conduct. The UCAR Participant Code of Conduct applies to both UCAR employees as well as participants in activities run by UCAR. The original version of this for all software projects that have strong management from UCAR or UCAR staff is available on the UCAR website at <a class="reference external" href="https://doi.org/10.5065/6w2c-a132">https://doi.org/10.5065/6w2c-a132</a>. The date that it was adopted by this project was 20 December 2020. When responding to complaints, UCAR HR and ODEI will do so based on the latest published version. Therefore, any project-specific changes should follow the Process for Changes section above.</p>
+<section id="add-your-cookbook-to-the-cookbooks-gallery">
+<h2>Add your cookbook to the Cookbooks Gallery!<a class="headerlink" href="#add-your-cookbook-to-the-cookbooks-gallery" title="Link to this heading"><i class="fas fa-link"></i></a></h2>
+<span class="d-flex justify-content-center py-4">
+    <a href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&labels=content%2Ccookbook-gallery-submission&template=update-cookbook-gallery.yaml&title=Update+Gallery+with+new+Cookbook" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none;">
+        Submit a new Cookbook
+    </a>
+</span>
+<ol class="arabic simple">
+<li><p>Click the above button, or use this link to the <a class="reference external" href="https://github.com/ProjectPythia/cookbook-gallery/issues/new?assignees=ProjectPythia%2Feducation&amp;amp;labels=content%2Ccookbook-gallery-submission&amp;amp;template=update-cookbook-gallery.yaml&amp;amp;title=Update+Gallery+with+new+Cookbook">new cookbook PR template</a>.</p></li>
+<li><p>Add the root name of your cookbook repository (e.g., just “cesm-cookbook”, not the whole URL) and any other information you’d like the team to know.</p></li>
+<li><p>The Pythia team will review your content and work with you on any necessary updates.</p></li>
+</ol>
 </section>
 </section>
 
@@ -463,20 +516,20 @@ aligned to this Code of Conduct, or banning temporarily or permanently any contr
                     
 <div class="prev-next-area">
     <a class="left-prev"
-       href="cookbook-guide.html"
+       href="contributing.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Cookbook Contributor’s Guide</p>
+        <p class="prev-next-title">Project Pythia Contributor’s Guide</p>
       </div>
     </a>
     <a class="right-next"
-       href="resource-gallery.html"
+       href="code_of_conduct.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Resource Gallery</p>
+        <p class="prev-next-title">Code of Conduct</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -522,7 +575,7 @@ aligned to this Code of Conduct, or banning temporarily or permanently any contr
       
       
       
-      <li><a href="_sources/code_of_conduct.md" target="_blank"
+      <li><a href="_sources/cookbook-guide.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
