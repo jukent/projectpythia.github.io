@@ -50,7 +50,7 @@ Formats
 Packages
 </button>
 <ul class="dropdown-menu" aria-labelledby="packagesDropdown">
-<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pooch onchange="change();">&nbsp;Pooch</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pystac onchange="change();">&nbsp;Pystac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
+<li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cartopy onchange="change();">&nbsp;Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=cfgrib onchange="change();">&nbsp;Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=climlab onchange="change();">&nbsp;Climlab</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=contextily onchange="change();">&nbsp;Contextily</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=dask onchange="change();">&nbsp;Dask</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=datetime onchange="change();">&nbsp;Datetime</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-comp onchange="change();">&nbsp;Geocat-comp</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geocat-viz onchange="change();">&nbsp;Geocat-viz</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=geopandas onchange="change();">&nbsp;Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=git onchange="change();">&nbsp;Git</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=holoviews onchange="change();">&nbsp;Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=hvPlot onchange="change();">&nbsp;Hvplot</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=intake onchange="change();">&nbsp;Intake</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=ipyleaflet onchange="change();">&nbsp;Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=jupyter onchange="change();">&nbsp;Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=matplotlib onchange="change();">&nbsp;Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=metpy onchange="change();">&nbsp;Metpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=netCDF4 onchange="change();">&nbsp;Netcdf4</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=numpy onchange="change();">&nbsp;Numpy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pandas onchange="change();">&nbsp;Pandas</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pangeo onchange="change();">&nbsp;Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pooch onchange="change();">&nbsp;Pooch</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pure-python onchange="change();">&nbsp;Pure python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=pystac onchange="change();">&nbsp;Pystac</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=rasterio onchange="change();">&nbsp;Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=scipy onchange="change();">&nbsp;Scipy</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=siphon onchange="change();">&nbsp;Siphon</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=wrf-python onchange="change();">&nbsp;Wrf-python</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xarray onchange="change();">&nbsp;Xarray</label></li><li><label class="dropdown-item checkbox packages"><input type="checkbox" rel=xgcm onchange="change();">&nbsp;Xgcm</label></li>
 </ul>
 </div>
 
@@ -151,7 +151,7 @@ Packages
 <img src="_static/thumbnails/earth_env_data_science.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://earth-env-data-science.github.io/intro" class="text-decoration-none"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -160,7 +160,7 @@ Packages
 <div class="content">
 <img src="_static/thumbnails/earth_env_data_science.png" class="modal-img" />
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
@@ -1421,7 +1421,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/" class="text-decoration-none"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
@@ -1599,7 +1599,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-txtfile.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Jog7ybd6amw" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1624,7 +1624,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-datadict.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/5z6-t62x7Xs" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1649,7 +1649,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-writingfx.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BerEf_3CsL8" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <A href ="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1674,7 +1674,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-firstpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/6lbbTwGFcTc" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1699,7 +1699,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-builtinpackage.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/44QUMCh2ZHU" class="text-decoration-none"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <A href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</A>.
 </p>
 </div>
@@ -1724,7 +1724,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-jupyter.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/xSzXvwzFsDU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
@@ -1774,7 +1774,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-matplotlib.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/EiPRIdHQEmE" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Matplotlib</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `matplotlib`. The content to follow along with this video is hosted on this <A href="https://github.com/anissa111/matplotlib-tutorial">Matplotlib Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1851,7 +1851,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-git.png" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/fYkPn0Nttlg" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <A href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</A>.
 </p>
 </div>
@@ -1876,7 +1876,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-pandas.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/BsV3ek7qsiM" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Max Grover, Drew Camron, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Project Pythia, Max Grover<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <A href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1901,7 +1901,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-xarray1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/Ss4ryKukhi4" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1926,7 +1926,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-xarray2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/2H_4drBwORY" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1951,7 +1951,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-dask1.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/wn-QM6QUB_U" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -1976,7 +1976,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-dask2.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/yn4_-1pHC5k" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <A href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</A>.
 </p>
 </div>
@@ -2001,7 +2001,7 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <img src="_static/thumbnails/ptss-geocatplot.jpeg" class="gallery-thumbnail" />
 <div class="container">
 <a href="https://youtu.be/It231le1fAU" class="text-decoration-none"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Plotting with GeoCAT</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anissa Zacharias<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anissa Zacharias, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing advanced plotting techniques and highlighting tools developed by GeoCAT. The content to follow along with this video is hosted in this <A href="https://github.com/anissa111/plotting-with-geocat-tutorial">Plotting with GeoCat GitHub Repository</A>.
 </p>
 </div>
@@ -2362,6 +2362,28 @@ Xarray is inspired by and borrows heavily from pandas, the popular data analysis
 <span class="badge bg-primary">netCDF4</span>
 <span class="badge bg-primary">numpy</span>
 <span class="badge bg-primary">remote-sensing</span>
+<span class="badge bg-primary">xarray</span>
+
+:::
+
+
+:::{grid-item-card}
+:shadow: md
+:class-footer: card-footer
+<div class="d-flex gallery-card">
+<img src="_static/images/ebp-logo.png" class="gallery-thumbnail" />
+<div class="container">
+<a href="https://herbie.readthedocs.io/" class="text-decoration-none"><h4 class="display-4 p-0">Herbie: Retrieve NWP Model Data</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Brian Blaylock<br/></p>
+<p class="my-2">Herbie is a python package that downloads recent and archived numerical weather prediction (NWP) model output from different cloud archive sources. Its most popular capability is to download HRRR model data. NWP data in the GRIB2 format can be read with xarray+cfgrib.
+</p>
+</div>
+</div>
+
+
++++
+
+<span class="badge bg-primary">cfgrib</span>
 <span class="badge bg-primary">xarray</span>
 
 :::
