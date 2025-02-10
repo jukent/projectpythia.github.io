@@ -16,32 +16,38 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-pythia-theme.min.css?v=ba7ce088" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=c1bdfaaf" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=c9a1db44" />
   
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="_static/documentation_options.js?v=9eb32ce0"></script>
-    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/design-tabs.js?v=f930bc37"></script>
     <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-T9KGMX7VHZ"></script>
@@ -67,7 +73,8 @@
     <link rel="prev" title="Code of Conduct" href="code_of_conduct.html" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="2 September 2024"/>   
+  <meta name="docsearch:version" content="" />
+    <meta name="docbuild:last-update" content="10 February 2025"/>   
   </head>
   
   
@@ -106,7 +113,7 @@
     
     
     <img src="_static/pythia_logo-white-rtext.svg" class="logo__image only-light" alt=" - Home"/>
-    <script>document.write(`<img src="_static/pythia_logo-white-rtext.svg" class="logo__image only-dark" alt=" - Home"/>`);</script>
+    <img src="_static/pythia_logo-white-rtext.svg" class="logo__image only-dark pst-js-only" alt=" - Home"/>
   
   
 </a></div>
@@ -237,7 +244,7 @@
 <span class="sd-summary-text">affiliation</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="neuromatch" type="checkbox"/> Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pythia" type="checkbox"/> Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="the-alan-turing-institute" type="checkbox"/> The Alan Turing Institute</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="unidata" type="checkbox"/> Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="xdev" type="checkbox"/> Xdev</label></li>
+<li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="california-institute-of-technology" type="checkbox"/> California Institute Of Technology</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="jet-propulsion-laboratory" type="checkbox"/> Jet Propulsion Laboratory</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="neuromatch" type="checkbox"/> Neuromatch</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="physical-oceanography-distributed-active-archive-center-(po.daac)" type="checkbox"/> Physical Oceanography Distributed Active Archive Center (PO.DAAC)</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="pythia" type="checkbox"/> Pythia</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="raijin" type="checkbox"/> Raijin</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="seats" type="checkbox"/> SEATS</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="the-alan-turing-institute" type="checkbox"/> The Alan Turing Institute</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="unidata" type="checkbox"/> Unidata</label></li><li><label class="dropdown-item checkbox affiliation"><input onchange="change();" rel="xdev" type="checkbox"/> Xdev</label></li>
 </ul>
 </div>
 </div>
@@ -246,7 +253,7 @@
 <span class="sd-summary-text">domains</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmospheric-science" type="checkbox"/> Atmospheric Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-science" type="checkbox"/> Climate Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-formats" type="checkbox"/> Data Formats</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> Data Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-visualization" type="checkbox"/> Data Visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ecology" type="checkbox"/> Ecology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="environmental-science" type="checkbox"/> Environmental Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="glaciology" type="checkbox"/> Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hydrology" type="checkbox"/> Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-geography" type="checkbox"/> Physical Geography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-oceanography" type="checkbox"/> Physical Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="remote-sensing" type="checkbox"/> Remote Sensing</label></li>
+<li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="atmospheric-science" type="checkbox"/> Atmospheric Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="chemical-oceanography" type="checkbox"/> Chemical Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="climate-science" type="checkbox"/> Climate Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-analysis" type="checkbox"/> Data Analysis</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-formats" type="checkbox"/> Data Formats</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-science" type="checkbox"/> Data Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="data-visualization" type="checkbox"/> Data Visualization</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="earth-system-science" type="checkbox"/> Earth System Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="ecology" type="checkbox"/> Ecology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="environmental-science" type="checkbox"/> Environmental Science</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="glaciology" type="checkbox"/> Glaciology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="hydrology" type="checkbox"/> Hydrology</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="oceanography" type="checkbox"/> Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-geography" type="checkbox"/> Physical Geography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="physical-oceanography" type="checkbox"/> Physical Oceanography</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="remote-sensing" type="checkbox"/> Remote Sensing</label></li><li><label class="dropdown-item checkbox domains"><input onchange="change();" rel="unstructured-grids" type="checkbox"/> Unstructured Grids</label></li>
 </ul>
 </div>
 </div>
@@ -255,7 +262,7 @@
 <span class="sd-summary-text">formats</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="book" type="checkbox"/> Book</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="course" type="checkbox"/> Course</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="documentation" type="checkbox"/> Documentation</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="gallery" type="checkbox"/> Gallery</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="tutorial" type="checkbox"/> Tutorial</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="video" type="checkbox"/> Video</label></li>
+<li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="book" type="checkbox"/> Book</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="code" type="checkbox"/> Code</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="course" type="checkbox"/> Course</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="documentation" type="checkbox"/> Documentation</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="gallery" type="checkbox"/> Gallery</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="tutorial" type="checkbox"/> Tutorial</label></li><li><label class="dropdown-item checkbox formats"><input onchange="change();" rel="video" type="checkbox"/> Video</label></li>
 </ul>
 </div>
 </div>
@@ -264,7 +271,7 @@
 <span class="sd-summary-text">packages</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <div class="dropdown">
 <ul>
-<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cfgrib" type="checkbox"/> Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="climlab" type="checkbox"/> Climlab</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="contextily" type="checkbox"/> Contextily</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datetime" type="checkbox"/> Datetime</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-comp" type="checkbox"/> Geocat-Comp</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geopandas" type="checkbox"/> Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="git" type="checkbox"/> Git</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipyleaflet" type="checkbox"/> Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="jupyter" type="checkbox"/> Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="netcdf4" type="checkbox"/> NetCDF4</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pandas" type="checkbox"/> Pandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pooch" type="checkbox"/> Pooch</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pure-python" type="checkbox"/> Pure Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pystac" type="checkbox"/> Pystac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="rasterio" type="checkbox"/> Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="scipy" type="checkbox"/> Scipy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="siphon" type="checkbox"/> Siphon</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="wrf-python" type="checkbox"/> Wrf-Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xgcm" type="checkbox"/> Xgcm</label></li>
+<li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cartopy" type="checkbox"/> Cartopy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="cfgrib" type="checkbox"/> Cfgrib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="climlab" type="checkbox"/> Climlab</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="contextily" type="checkbox"/> Contextily</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="dask" type="checkbox"/> Dask</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="datetime" type="checkbox"/> Datetime</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="earthaccess" type="checkbox"/> Earthaccess</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="esbmtk" type="checkbox"/> Esbmtk</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-comp" type="checkbox"/> Geocat-Comp</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geocat-viz" type="checkbox"/> Geocat-Viz</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="geopandas" type="checkbox"/> Geopandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="git" type="checkbox"/> Git</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="holoviews" type="checkbox"/> Holoviews</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="hvplot" type="checkbox"/> HvPlot</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="intake" type="checkbox"/> Intake</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="ipyleaflet" type="checkbox"/> Ipyleaflet</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="jupyter" type="checkbox"/> Jupyter</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="matplotlib" type="checkbox"/> Matplotlib</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="metpy" type="checkbox"/> Metpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="netcdf4" type="checkbox"/> NetCDF4</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numba" type="checkbox"/> Numba</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="numpy" type="checkbox"/> Numpy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pandas" type="checkbox"/> Pandas</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pangeo" type="checkbox"/> Pangeo</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pooch" type="checkbox"/> Pooch</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pure-python" type="checkbox"/> Pure Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="pystac" type="checkbox"/> Pystac</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="rasterio" type="checkbox"/> Rasterio</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="scipy" type="checkbox"/> Scipy</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="siphon" type="checkbox"/> Siphon</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="wrf-python" type="checkbox"/> Wrf-Python</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xarray" type="checkbox"/> Xarray</label></li><li><label class="dropdown-item checkbox packages"><input onchange="change();" rel="xgcm" type="checkbox"/> Xgcm</label></li>
 </ul>
 </div>
 </div>
@@ -280,7 +287,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/Xdev.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://ncar.github.io/python-tutorial/index.html"><h4 class="display-4 p-0">Your First Python Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:xdev@ucar.edu">Xdev Team</a><br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:xdev@ucar.edu">Xdev Team</a><br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
 <p class="my-2">A tutorial for getting started with Python aimed at scientists with experience in at least one other coding language. Designed to teach you Python, not package specific syntax.
 </p>
 </div>
@@ -352,7 +359,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/earth_env_data_science.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://earth-env-data-science.github.io/intro"><h4 class="display-4 p-0">An Introduction to Earth and Environmental Data Science</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Kerry Key, Ryan Abernathey<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
+<p class="card-subtitle"><strong>Author:</strong> Ryan Abernathey, Kerry Key<br/><strong>Affiliation:</strong> Lamont-Doherty Earth Observatory</p>
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education<a class="modal-btn"> ... more</a> </p>
 </div>
 </div>
@@ -360,7 +367,7 @@
 <div class="content">
 <img class="modal-img" src="_static/thumbnails/earth_env_data_science.png"/>
 <h3 class="display-3">An Introduction to Earth and Environmental Data Science</h3>
-<strong>Author:</strong> Kerry Key, Ryan Abernathey
+<strong>Author:</strong> Ryan Abernathey, Kerry Key
 <br/>
 <strong>Affiliation:</strong> Lamont-Doherty Earth Observatory
 <p class="my-2">This book grew out of a course developed at Columbia University called Research Computing in Earth Science. It was written mostly by Ryan Abernathey, with significant contributions from Kerry Key. By separating the book from the class, we hope to create an open-source community resource for python education in the Earth and Environmental Sciences.
@@ -731,7 +738,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/geocat.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://geocat-comp.readthedocs.io/en/latest/examples.html"><h4 class="display-4 p-0">GeoCAT Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCat<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
 <p class="my-2">The examples below show GeoCAT-comp functions being utilized in real-world use cases. They also demonstrate how GeoCAT-comp can be used to make plots with Matplotlib (using Cartopy) and PyNGL (work in progress).
 </p>
 </div>
@@ -750,7 +757,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/geocat.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://geocat-examples.readthedocs.io/"><h4 class="display-4 p-0">GeoCAT Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> GeoCAT<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
 <p class="my-2">A gallery of plotting examples from GeoCat.
 </p>
 </div>
@@ -984,7 +991,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://unidata.github.io/MetPy/latest/index.html"><h4 class="display-4 p-0">MetPy</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">MetPy is a collection of tools in Python for reading, visualizing, and performing calculations with weather data.
 </p>
 </div>
@@ -1003,7 +1010,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://unidata.github.io/MetPy/latest/tutorials/index.html"><h4 class="display-4 p-0">MetPy Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">This collection of tutorials (under development) demonstrates the use of MetPy to perform common meteorological tasks.
 </p>
 </div>
@@ -1021,7 +1028,7 @@
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
 <div class="container">
-<a class="text-decoration-none" href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/"><h4 class="display-4 p-0">Unidata Python Workshop- MetPy</h4></a>
+<a class="text-decoration-none" href="https://unidata.github.io/python-training/workshop/Metpy_Introduction/introduction-to-metpy/"><h4 class="display-4 p-0">Unidata Python Workshop - MetPy</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
 <p class="my-2">MetPy is a modern meteorological open-source toolkit for Python. It is a maintained project of Unidata to serve the academic meteorological community. MetPy consists of three major areas of functionality: plots, calculations, and file i/o.
 </p>
@@ -1041,7 +1048,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy.jpg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://unidata.github.io/MetPy/latest/examples/index.html"><h4 class="display-4 p-0">MetPy Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> MetPy Developers<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">Examples of using a variety of MetPy’s functionality together.
 </p>
 </div>
@@ -1054,32 +1061,13 @@
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science gallery docutils">
-<div class="sd-card-body docutils">
-<div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
-<div class="container">
-<a class="text-decoration-none" href="https://unidata.github.io/python-training/gallery/gallery-home/"><h4 class="display-4 p-0">Unidata Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">Check out detailed examples for atmospheric science and meteorology, from data analysis to publication-quality figures.
-</p>
-</div>
-</div>
-</div>
-<div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
-<span class="badge bg-primary mybadges">Gallery</span></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card metpy video docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/metpy-mondays.jpeg"/>
 <div class="container">
-<a class="text-decoration-none" href="https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO"><h4 class="display-4 p-0">Unidata MetPy Mondays</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<a class="text-decoration-none" href="https://www.youtube.com/playlist?list=PLQut5OXpV-0ir4IdllSt1iEZKTwFBa7kO"><h4 class="display-4 p-0">MetPy Mondays</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">A weekly video series showing how to use MetPy or other Python libraries to solve problems relevant to geoscience applications.
 </p>
 </div>
@@ -1125,25 +1113,6 @@
 </div>
 <div class="sd-card-footer card-footer docutils">
 <p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card numpy tutorial docutils">
-<div class="sd-card-body docutils">
-<div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="_static/thumbnails/unidata_150x150.png"/>
-<div class="container">
-<a class="text-decoration-none" href="https://unidata.github.io/python-training/workshop/NumPy/numpy-basics/"><h4 class="display-4 p-0">Unidata Numpy Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">Unidata Numpy tutorial that covers how to create an array of ‘data’, perform basic calculations on this data using python math functions, and slice and index the array.
-</p>
-</div>
-</div>
-</div>
-<div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary mybadges">Numpy</span>
-<span class="badge bg-primary mybadges">Tutorial</span></p>
 </div>
 </div>
 </div>
@@ -1281,7 +1250,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://unidata.github.io/siphon"><h4 class="display-4 p-0">Siphon</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">Siphon is a collection of Python utilities for downloading data from remote data services. Much of Siphon’s current functionality focuses on access to data hosted on a THREDDS Data Server. It also provides clients to a variety of simple web services.
 </p>
 </div>
@@ -1294,32 +1263,13 @@
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card siphon tutorial docutils">
-<div class="sd-card-body docutils">
-<div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
-<div class="container">
-<a class="text-decoration-none" href="https://unidata.github.io/python-training/workshop/Siphon/siphon-overview/"><h4 class="display-4 p-0">Siphon Tutorial</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">An overview on Siphon from the Unidata Python Workshop that: uses Siphon to access a THREDDS catalog, filters data, and uses Siphon to perform remote data access.
-</p>
-</div>
-</div>
-</div>
-<div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary mybadges">Siphon</span>
-<span class="badge bg-primary mybadges">Tutorial</span></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card gallery siphon docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/siphon.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://unidata.github.io/siphon/latest/examples/index.html"><h4 class="display-4 p-0">Siphon Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Siphon Contributors<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">NSF Unidata</a></p>
 <p class="my-2">Examples of using Siphon’s functionality.
 </p>
 </div>
@@ -1338,7 +1288,7 @@
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://wrf-python.readthedocs.io"><h4 class="display-4 p-0">WRF-Python</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
 <p class="my-2">A collection of diagnostic and interpolation routines for use with output from the Weather Research and Forecasting (WRF-ARW) Model.
 </p>
 </div>
@@ -1357,7 +1307,7 @@
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://wrf-python.readthedocs.io/en/latest/plot.html"><h4 class="display-4 p-0">WRF-Python Gallery</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
 <p class="my-2">Examples of how wrf-python can be used to make plots with matplotlib (with basemap and cartopy) and PyNGL. None of these examples make use of xarray’s builtin plotting functions, since additional work is most likely needed to extend xarray in order to work correctly.
 </p>
 </div>
@@ -1404,31 +1354,12 @@
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card tutorial xarray docutils">
-<div class="sd-card-body docutils">
-<div class="d-flex gallery-card">
-<img class="gallery-thumbnail" src="_static/thumbnails/xarray.png"/>
-<div class="container">
-<a class="text-decoration-none" href="https://unidata.github.io/python-training/workshop/XArray/xarray-introduction/"><h4 class="display-4 p-0">Unidata Xarray Workshop</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Anonymous<br/><strong>Affiliation:</strong> <a href="https://www.unidata.ucar.edu/">Unidata</a></p>
-<p class="my-2">An introduction to Xarray through the Unidata Python Workshop that asks, "What is XArray and how does XArray fit in with Numpy and Pandas?"" by creating a DataArray, openning netCDF data using XArray, and subsetting the data.
-</p>
-</div>
-</div>
-</div>
-<div class="sd-card-footer card-footer docutils">
-<p class="sd-card-text"><span class="badge bg-primary mybadges">Tutorial</span>
-<span class="badge bg-primary mybadges">Xarray</span></p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card dask tutorial xarray docutils">
 <div class="sd-card-body docutils">
 <div class="d-flex gallery-card">
 <img class="gallery-thumbnail" src="_static/thumbnails/xarray.png"/>
 <div class="container">
-<a class="text-decoration-none" href="https://xarray-contrib.github.io/xarray-tutorial/"><h4 class="display-4 p-0">Xarray Tutorial</h4></a>
+<a class="text-decoration-none" href="https://tutorial.xarray.dev/intro.html"><h4 class="display-4 p-0">Xarray Tutorial</h4></a>
 <p class="card-subtitle"><strong>Author:</strong> Xarray Developers<br/></p>
 <p class="my-2">A collection of tutorials provided by the Xarray developers.
 </p>
@@ -1449,7 +1380,7 @@
 <img class="gallery-thumbnail" src="_static/images/ebp-logo.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://nbviewer.jupyter.org/github/ltauxe/Python-for-Earth-Science-Students/tree/master/"><h4 class="display-4 p-0">Python Programming for Earth Science Students</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:hasefaw@ucsd.edu">Hanna Asefaw</a>, <a href="mailto:bcych@ucsd.edu">Brendan Cych</a>, <a href="mailto:ltauxe@ucsd.edu">Lisa Tauxe</a><br/><strong>Affiliation:</strong> <a href="https://scripps.ucsd.edu/">Scripps Institution of Oceanography</a></p>
 <p class="my-2">Python Programming for Earth Science Students </p>
 </div>
 </div>
@@ -1611,7 +1542,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-txtfile.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/Jog7ybd6amw"><h4 class="display-4 p-0">Your First Python Tutorial - Reading in a .txt File</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers setting up a work environment and opening a .txt file. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html">Xdev Python Tutorial website</a>.
 </p>
 </div>
@@ -1633,7 +1564,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-datadict.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/5z6-t62x7Xs"><h4 class="display-4 p-0">Your First Python Tutorial - Creating a Data Dictionary</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers creating a data dictionary. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#creating-a-data-dictionary">Xdev Python Tutorial website</a>.
 </p>
 </div>
@@ -1655,7 +1586,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-writingfx.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/BerEf_3CsL8"><h4 class="display-4 p-0">Your First Python Tutorial - Writing Functions</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to write and call functions in Python. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#writing-functions">Xdev Python Tutorial website</a>.
 </p>
 </div>
@@ -1677,7 +1608,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-firstpackage.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/6lbbTwGFcTc"><h4 class="display-4 p-0">Your First Python Tutorial - Creating Your Own Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to create and call modules and packages. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#first-python-package">Xdev Python Tutorial website</a>.
 </p>
 </div>
@@ -1699,7 +1630,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-builtinpackage.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/44QUMCh2ZHU"><h4 class="display-4 p-0">Your First Python Tutorial - Using a Built-In Package and Publishing Your Package</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Julia Kent<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Julia Kent, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series designed to teach you Python, not package specific syntax. This lessons covers how to use your first external buil-in package, `math`, and how to publish your package. The content to follow along with this video is hosted on the <a href="https://ncar.github.io/python-tutorial/tutorials/yourfirst.html#using-a-built-in-package">Xdev Python Tutorial website</a>.
 </p>
 </div>
@@ -1721,7 +1652,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-jupyter.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/xSzXvwzFsDU"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Jupyter Notebooks</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing JupyterLab and Jupyter Notebooks.
 </p>
 </div>
@@ -1833,7 +1764,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-git.png"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/fYkPn0Nttlg"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Git and GitHub</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Kevin Paul<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Kevin Paul, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the tools Git and GitHub. The content to follow along with this tutorial is hosted in this <a href="https://github.com/NCAR/git-github-demo">Git and GitHub Demo GitHub Repository</a>.
 </p>
 </div>
@@ -1855,7 +1786,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-pandas.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/BsV3ek7qsiM"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Pandas</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Max Grover, Project Pythia, Drew Camron<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Drew Camron, Max Grover, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `pandas`. The content to follow along with this video is hosted in this <a href="https://github.com/mgrover1/ncar_pandas_tutorial">Pandas Tutorial GitHub Repository</a>.
 </p>
 </div>
@@ -1877,7 +1808,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-xarray1.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/Ss4ryKukhi4"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
@@ -1899,7 +1830,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-xarray2.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/2H_4drBwORY"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Xarray Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `xarray`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
@@ -1921,7 +1852,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-dask1.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/wn-QM6QUB_U"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 1</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the first lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
@@ -1943,7 +1874,7 @@
 <img class="gallery-thumbnail" src="_static/thumbnails/ptss-dask2.jpeg"/>
 <div class="container">
 <a class="text-decoration-none" href="https://youtu.be/yn4_-1pHC5k"><h4 class="display-4 p-0">Python Tutorial Seminar Series - Dask Part 2</h4></a>
-<p class="card-subtitle"><strong>Author:</strong> Project Pythia, Anderson Banihirwe<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
+<p class="card-subtitle"><strong>Author:</strong> Anderson Banihirwe, Project Pythia<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NCAR</a></p>
 <p class="my-2">Recording from the Python Tutorial Seminar Series introducing the Python Package `dask`. This is the second lesson of a two part series. The content to follow along with this video is hosted in this <a href="https://github.com/andersy005/xarray-tutorial">Xarray Tutorial GitHub Repository</a>.
 </p>
 </div>
@@ -2303,6 +2234,128 @@
 </div>
 </div>
 </div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card chemical-oceanography earth-system-science code esbmtk matplotlib numpy pandas docutils">
+<div class="sd-card-body docutils">
+<div class="d-flex gallery-card">
+<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png"/>
+<div class="container">
+<a class="text-decoration-none" href="https://github.com/uliw/esbmtk"><h4 class="display-4 p-0">The Earth Science Box Modelling Toolkit</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> <a href="mailto:uli.wortmann@utoronto.ca">Ulrich G Wortmann</a><br/><strong>Affiliation:</strong> <a href="https://www.es.utoronto.ca/">Dept. of Earth Sciences, University of Toronto</a></p>
+<p class="my-2">ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
+It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
+manual at https://esbmtk.readthedocs.io/en/latest<a class="modal-btn"> ... more</a> </p>
+</div>
+</div>
+<div class="modal">
+<div class="content">
+<img class="modal-img" src="https://raw.githubusercontent.com/uliw/esbmtk/staging/mpc.png"/>
+<h3 class="display-3">The Earth Science Box Modelling Toolkit</h3>
+<strong>Author:</strong> <a href="mailto:uli.wortmann@utoronto.ca">Ulrich G Wortmann</a>
+<br/>
+<strong>Affiliation:</strong> <a href="https://www.es.utoronto.ca/">Dept. of Earth Sciences, University of Toronto</a>
+<p class="my-2">ESBMTK is a python library that aims to simplify typical box modeling projects in the Earth-Sciences.
+It uses a declarative approach to describe models, and abstracts typical modeling tasks like gas-exchange and carbonate dissolution through python classes. See the
+manual at https://esbmtk.readthedocs.io/en/latest for installation instructions usage, and example code.
+</p>
+<p class="my-2"><span class="badge bg-primary mybadges">Chemical-Oceanography</span>
+<span class="badge bg-primary mybadges">Earth-System-Science</span>
+<span class="badge bg-primary mybadges">Code</span>
+<span class="badge bg-primary mybadges">Esbmtk</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span></p>
+<p class="mt-3 mb-0"><a class="btn btn-outline-primary btn-block" href="https://github.com/uliw/esbmtk">Visit Website</a></p>
+</div>
+</div>
+</div>
+<div class="sd-card-footer card-footer docutils">
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Chemical-Oceanography</span>
+<span class="badge bg-primary mybadges">Earth-System-Science</span>
+<span class="badge bg-primary mybadges">Code</span>
+<span class="badge bg-primary mybadges">Esbmtk</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Pandas</span></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card california-institute-of-technology hydrology jet-propulsion-laboratory oceanography physical-oceanography-distributed-active-archive-center-po-daac remote-sensing book earthaccess tutorial xarray docutils">
+<div class="sd-card-body docutils">
+<div class="d-flex gallery-card">
+<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/podaac/tutorials/master/images/podaac_cookbook_thumbnail.png"/>
+<div class="container">
+<a class="text-decoration-none" href="https://podaac.github.io/tutorials/"><h4 class="display-4 p-0">The PO.DAAC Cookbook</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> PO.DAAC Team<br/><strong>Affiliation:</strong> <a href="https://www.jpl.nasa.gov/">Jet Propulsion Laboratory, California Institute of Technology</a></p>
+<p class="my-2">A place to find NASA ocean, climate, and surface water data recipes and tutorials for the Physical Oceanography Distributed Active Archive Center (PO.DAAC) datasets, tools  </p>
+</div>
+</div>
+</div>
+<div class="sd-card-footer card-footer docutils">
+<p class="sd-card-text"><span class="badge bg-primary mybadges">California-Institute-Of-Technology</span>
+<span class="badge bg-primary mybadges">Hydrology</span>
+<span class="badge bg-primary mybadges">Jet-Propulsion-Laboratory</span>
+<span class="badge bg-primary mybadges">Oceanography</span>
+<span class="badge bg-primary mybadges">Physical-Oceanography-Distributed-Active-Archive-Center-(PO.DAAC)</span>
+<span class="badge bg-primary mybadges">Remote-Sensing</span>
+<span class="badge bg-primary mybadges">Book</span>
+<span class="badge bg-primary mybadges">Earthaccess</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card atmospheric-science climate-science data-analysis data-visualization pangeo raijin seats unstructured-grids dask documentation holoviews matplotlib numba numpy tutorial xarray docutils">
+<div class="sd-card-body docutils">
+<div class="d-flex gallery-card">
+<img class="gallery-thumbnail" src="https://raw.githubusercontent.com/UXARRAY/uxarray/921dd8f42f661692f0cec170ee5c7dbedb294237/docs/_static/images/logos/uxarray_logo_v_dark.svg"/>
+<div class="container">
+<a class="text-decoration-none" href="https://uxarray.readthedocs.io/"><h4 class="display-4 p-0">UXarray</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> The UXarray Developers<br/><strong>Affiliation:</strong> NSF NCAR &amp; Department of Energy</p>
+<p class="my-2">Xarray extension for unstructured climate and global weather data </p>
+</div>
+</div>
+</div>
+<div class="sd-card-footer card-footer docutils">
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Atmospheric-Science</span>
+<span class="badge bg-primary mybadges">Climate-Science</span>
+<span class="badge bg-primary mybadges">Data-Analysis</span>
+<span class="badge bg-primary mybadges">Data-Visualization</span>
+<span class="badge bg-primary mybadges">Pangeo</span>
+<span class="badge bg-primary mybadges">Raijin</span>
+<span class="badge bg-primary mybadges">SEATS</span>
+<span class="badge bg-primary mybadges">Unstructured-Grids</span>
+<span class="badge bg-primary mybadges">Dask</span>
+<span class="badge bg-primary mybadges">Documentation</span>
+<span class="badge bg-primary mybadges">Holoviews</span>
+<span class="badge bg-primary mybadges">Matplotlib</span>
+<span class="badge bg-primary mybadges">Numba</span>
+<span class="badge bg-primary mybadges">Numpy</span>
+<span class="badge bg-primary mybadges">Tutorial</span>
+<span class="badge bg-primary mybadges">Xarray</span></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-md tagged-card documentation docutils">
+<div class="sd-card-body docutils">
+<div class="d-flex gallery-card">
+<img class="gallery-thumbnail" src="_static/thumbnails/geocat.png"/>
+<div class="container">
+<a class="text-decoration-none" href="https://ncar.github.io/geocat-applications/"><h4 class="display-4 p-0">GeoCAT Applications</h4></a>
+<p class="card-subtitle"><strong>Author:</strong> GeoCAT Team<br/><strong>Affiliation:</strong> <a href="https://ncar.ucar.edu/">NSF NCAR</a></p>
+<p class="my-2">GeoCAT Applications is a community resource managed by the GeoCAT team. Inspired by the NCL Applications page, this is designed to be a quick reference demonstrating capabilities within the Scientific Python Ecosystem that may be relevant to your geoscience workflows.
+</p>
+</div>
+</div>
+</div>
+<div class="sd-card-footer card-footer docutils">
+<p class="sd-card-text"><span class="badge bg-primary mybadges">Documentation</span></p>
+</div>
+</div>
+</div>
 <div class="modal-backdrop"></div>
 <script src="../html/_static/custom.js"></script>
 </div>
@@ -2337,8 +2390,8 @@
   </div>
     
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
      
@@ -2354,10 +2407,10 @@
     <div class="container-xl">
       <div class="row d-flex flex-wrap align-items-center">
         <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
-          <img alt="NCAR" src="_images/NSF-NCAR_Lockup-UCAR-Dark_102523.png" style="width: 100%">
+          <img alt="NSF NCAR" src="_images/NSF-NCAR_Lockup-UCAR-Dark_102523.png" style="width: 100%">
         </div>
         <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
-          <img alt="Unidata" src="_images/Unidata_logo_horizontal_1200x300.svg" style="width: 100%">
+          <img alt="NSF Unidata" src="_images/NSF-Unidata_lockup_horizontal_2023.png" style="width: 100%">
         </div>
         <div class="d-flex col-lg-3 col-md-4 col-sm-6 p-2 mx-auto">
           <img alt="UAlbany" src="_images/UAlbany-A2-logo-purple-gold.svg" style="width: 100%">
@@ -2407,7 +2460,7 @@
         
           By the <a href="https://projectpythia.org/">Project Pythia</a> Community.
         
-          Last updated on 2 September 2024.
+          Last updated on 10 February 2025.
         </p>
       </div>
     </div>

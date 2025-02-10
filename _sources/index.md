@@ -9,10 +9,17 @@
 
 <span style="font-size: 2.6rem;">An education and training hub for the geoscientific Python community</span>
 
-<a href="https://projectpythia.org/pythia-cookoff-2024/" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
-         Project Pythia is hosting a Cookbook Cook-Off June 11-14, 2024.<br>
-         Learn more here.
+<br><br>
+
+<a href="posts/new-cookbooks.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; ">
+          Round-up of new Cookbooks from our 2024 Cook-off hackathon!
+  </a>
+<br>
+
+<a href="posts/fundraiser.html" role="button" class="btn btn-light btn-lg" style="display: flex; align-items: center; font-weight: 600; text-decoration: none; background-color: #ccc; border: rgba(var(--spt-color-dark), 1);">
+         Donate to support Project Pythia!
  </a>
+ <br>
 
 [Project Pythia](about) is the education working group for [Pangeo](https://pangeo.io)
 and is an educational resource for the entire geoscience community.
@@ -225,6 +232,7 @@ maxdepth: 1
 about.md
 contributing.md
 cookbook-guide.md
+cookbook-tasklist.md
 code_of_conduct.md
 resource-gallery.md
 blog.md
