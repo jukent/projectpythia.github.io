@@ -54,8 +54,13 @@ However, we recommend transferring to the Pythia organization early, for a few r
 - Easier to get help from the Pythia infrastructure team
 - Encourages collaboration
 
+<<<<<<< HEAD
 ```{note}
 You're still in control! You will always retain write access to your Cookbook repository even after transfering ownership to the Pythia organization.
+=======
+```{Note}
+You're still in control! You will always retain write access to your Cookbook repository even after transferring ownership to the Pythia organization.
+>>>>>>> 2b78b983 (spelling errors)
 
 Also, _don't worry about breaking anything!_ Your repo will not affect any other Project Pythia content until you initiate the request to list it on the [Cookbook Gallery](https://cookbooks.projectpythia.org) (see below...)
 ```
