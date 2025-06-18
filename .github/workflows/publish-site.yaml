@@ -17,5 +17,3 @@ jobs:
   deploy:
     needs: build
     uses: ProjectPythia/cookbook-actions/.github/workflows/deploy-book.yaml@main
-    with:
-      publish_dir: 'portal/_build/html'
