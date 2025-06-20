@@ -1,7 +1,6 @@
 ---
-blogpost: true
-date: Jan 20, 2025
-author: Kevin Tyle
+date: 2025-01-20
+author: ktyle
 tags: ["binderhub", "maintenance"]
 ---
 
