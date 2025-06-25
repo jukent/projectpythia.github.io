@@ -17,7 +17,7 @@ An education and training hub for the geoscientific Python community
 
 Project Pythia is hosting a Cookbook Cook-Off August 5-8, 2025.
 
-{button}`Cook-Off 2025<.https://projectpythia.org/pythia-cookoff-2025/>`
+{button}`Cook-Off 2025<https://projectpythia.org/pythia-cookoff-2025/>`
 
 {button}`2024 Cookbooks<./posts/new-cookbooks.md>`
 
@@ -71,14 +71,14 @@ Pythia Cookbooks are collections of more advanced and domain-specific example wo
 :::
 
 :::{card}
-:url: ./resource-gallery.md
+:url: https://projectpythia.org/resource-gallery/
 :header: The Resource Gallery
 :footer: Visit the Resource Gallery »
 
 There is a wealth of educational resources out there on the internet for learning
 Python and how to use it in the geosciences! We have attempted to gather together
 a curated and filterable list of these resources (including Pythia's own content)
-into our [Pythia Resource Gallery](/resource-gallery).
+into our [Pythia Resource Gallery](https://projectpythia.org/resource-gallery/).
 Click the link below to see a hand-picked selection of resources for learning at
 your own pace.
 :::
