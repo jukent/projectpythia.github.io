@@ -1,0 +1,44 @@
+.footer {
+  background: #999999;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  /* Outer content grid */
+  & .outer-grid {
+    /* spacer, project description, spacer, link columns, spacer */
+    grid-template-columns: 2fr 3fr 3fr 4fr;
+    align-items: center;
+    margin-bottom: 0rem;
+
+    & li {
+      list-style: none;
+    }
+
+  }
+
+  /* Heading colours */
+  & a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+
+  & h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+/* Footer Logos */
+.footer-logos {
+    margin-left: 1rem !important;
+}
+/* Menu Font Size */
+.footer-text {
+  font-size: 0.7rem;
+}
