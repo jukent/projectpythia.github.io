@@ -16,6 +16,12 @@ project:
         - 'chro@ucar.edu'
         - 'http://localhost:3000'
         - 'https://github.com/YOUR_USER_NAME/pythia-foundations'
+    - rule: directive-known # The postlist directive is not recognized by the linter, but it works when the site is built
+      severity: ignore
+    - rule: image-format-optimizes # `metrics.md` has some large images that are not optimized
+      severity: ignore
+    - rule: container-children-valid # `metrics.md`` unexpected figure content of type output found in legend node, but works when the site is built
+      severity: ignore
 
   toc:
     - file: index.md
