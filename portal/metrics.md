@@ -74,6 +74,7 @@ except (google.auth.exceptions.MalformedError, ValueError) as e:
     # 0: Secret not found, else malformed
     # 706: extra quote, 732: extra '\', 734: both
     print('Length of PRIVATE_KEY:', len(PRIVATE_KEY))
+    raise
 
 pre_project_date = '2020-03-31'
 ```
