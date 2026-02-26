@@ -12,7 +12,6 @@ kernelspec:
 import datetime
 import json
 import os
-import re
 
 import cartopy
 import cartopy.io
@@ -34,23 +33,8 @@ COOKBOOKS_ID = '324070631'
 
 # Access Secrets
 PRIVATE_KEY_ID = os.environ.get('PRIVATE_KEY_ID')
-
-# Ensure GH secrets doesn't introduce extra '\' new line characters or other
-# formatting issues that stricter cryptography versions (Python 3.14+) will reject
-raw_key = os.environ.get('PRIVATE_KEY', '')
-raw_key = raw_key.replace('\\n', '\n').replace('\r\n', '\n').replace('\r', '\n')
-
-match = re.search(
-    r'-----BEGIN PRIVATE KEY-----(.*?)-----END PRIVATE KEY-----',
-    raw_key,
-    re.DOTALL
-)
-if match:
-    body = re.sub(r'\s+', '', match.group(1))
-    chunks = [body[i:i+64] for i in range(0, len(body), 64)]
-    PRIVATE_KEY = '-----BEGIN PRIVATE KEY-----\n' + '\n'.join(chunks) + '\n-----END PRIVATE KEY-----\n'
-else:
-    PRIVATE_KEY = raw_key  # fallback
+# Ensure GH secrets doesn't introduce extra '\' new line characters (related to '\' being an escape character)
+PRIVATE_KEY = os.environ.get('PRIVATE_KEY').replace('\\n', '\n')
 
 credentials_dict = {
     'type': 'service_account',
@@ -68,13 +52,12 @@ credentials_dict = {
 
 try:
     client = BetaAnalyticsDataClient.from_service_account_info(credentials_dict)
-except (google.auth.exceptions.MalformedError, ValueError) as e:
-    print('Credentials Error:', repr(e))
+except google.auth.exceptions.MalformedError as e:
+    print('Malformed Error:', repr(e))
     # Insight into reason for failure without exposing secret key
     # 0: Secret not found, else malformed
     # 706: extra quote, 732: extra '\', 734: both
     print('Length of PRIVATE_KEY:', len(PRIVATE_KEY))
-    raise
 
 pre_project_date = '2020-03-31'
 ```
@@ -230,7 +213,6 @@ def _run_top_pages_report(property_id):
 
     #  Reverse order of lists, so they'll plot with most visited page on top (i.e. last)
     return pages[::-1], views[::-1]
-
 def plot_top_pages(PORTAL_ID, FOUNDATIONS_ID, COOKBOOKS_ID):
     """
     Function that takes the top 5 viewed pages for all 3 projects and plot them on a histogram.
@@ -306,7 +288,6 @@ def _run_usersXcountry_report(property_id):
         user_by_country[country] = user_by_country.get(country, 0) + users
 
     return user_by_country
-
 def plot_usersXcountry(FOUNDATIONS_ID):
     """
     Function for taking users by country for Pythia Foundations and plotting them on a map.
