@@ -9,6 +9,19 @@ project:
   plugins:
     - type: executable
       path: src/blogpost.py
+  error_rules:
+    - rule: link-resolves
+      severity: ignore
+      keys:
+        - 'chro@ucar.edu'
+        - 'http://localhost:3000'
+        - 'https://github.com/YOUR_USER_NAME/pythia-foundations'
+    - rule: directive-known # The postlist directive is not recognized by the linter, but it works when the site is built
+      severity: ignore
+    - rule: image-format-optimizes # `metrics.md` has some large images that are not optimized
+      severity: ignore
+    - rule: container-children-valid # `metrics.md`` unexpected figure content of type output found in legend node, but works when the site is built
+      severity: ignore
 
   toc:
     - file: index.md
@@ -40,32 +53,3 @@ site:
   options:
     style: style.css
     analytics_google: G-T9KGMX7VHZ # Measurement ID or Tracking ID
-  parts:
-    footer: |
-        :::::{grid} 3
-        :class: items-center
-
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-NCAR.png
-        :alt: NCAR Logo
-        ```
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/NSF-Unidata.png
-        :alt: Unidata Logo
-        ```
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/UAlbany.svg
-        :alt: UAlbany Logo
-        ```
-        :::::
-
-        :::::{div}
-        :class: flex items-center gap-4 text-disclaimer
-
-        ```{image} https://raw.githubusercontent.com/ProjectPythia/pythia-config/main/logos/nsf.jpg
-        :alt: NSF Logo
-        :height: 60px
-        ```
-
-        This material is based upon work supported by the National Science Foundation under Grant Nos. 2026863 and 2026899. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-        :::::
